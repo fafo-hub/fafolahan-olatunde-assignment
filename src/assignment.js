@@ -18,8 +18,8 @@ function sumOfNumbers(arrayOfNumbers) {
       return a + b
     }, 0)
 }
-console.log(sumOfNumbers([1, 2, 3, 4, 5]));
 
+ assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 2
@@ -31,12 +31,11 @@ console.log(sumOfNumbers([1, 2, 3, 4, 5]));
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.filter(x => {
-      return x % 2 === 0
-    })
+    evenNumbers =  arrayOfNumbers.filter((x) => (x %2 === 0))
+    return evenNumbers.length
 }
-console.log(countEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
+ assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
